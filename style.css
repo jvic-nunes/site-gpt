@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    height: 100vh;
+
+    padding: 20px 5px 0 20px;
+    background-color: rgba(247, 244, 244, 0.7);
+}   
+
+
+.sidebar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.sidebar header:hover {
+    background-color: rgba(231, 228, 228, 0.7);
+    border-radius: 10px;
+}
+
+.sidebar header p{
+    width: calc(250px - 48px);
+    padding-left: 14px;
+}
+
+.sidebar header img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar .scrollbox-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 40px - 112px);
+    overflow: auto;
+}
+
+.sidebar .scrollbox-inner div {
+    margin-top: 30px;
+}
+
+.sidebar .scrollbox-inner div h4 {
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 9pt;
+    opacity: 0.9;
+}
+
+.sidebar .scrollbox-inner div p {
+    white-space: nowrap;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 11pt;
+
+    cursor: pointer;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar .scrollbox-inner div p:hover {
+    background-color: rgba(231, 228, 228, 0.7);
+    border-radius: 10px;
+}
+
+
+.sidebar footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 112px;
+}
+
+.sidebar footer .footer1,
+.sidebar footer .footer2 {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 50%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.sidebar footer .footer1:hover,
+.sidebar footer .footer2:hover,
+.ladoDireito header:hover {
+    background-color: rgba(231, 228, 228, 0.7);
+    border-radius: 10px;
+}
+
+.sidebar footer .footer1 img {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.sidebar footer .footer2 .bolinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+    background-color: orangered;
+}
+
+.ladoDireito {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 225px);
+}
+
+.ladoDireito header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.ladoDireito header img {
+    align-items: center;
+    height: 10px;
+    width: 10px;
+    margin-left: 7px;
+}
+
+.ladoDireito-pt-1-60per {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 60%;
+} 
+
+.ladoDireitoImgCentro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+}
+
+.ladoDireito .howCanI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.ladoDireito-pt-2-40per {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+
+.ladoDireito-pt-2-40per {
+    justify-content: center;
+}
+
+.ladoDireito-pt-2-40per-boxes {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.ladoDireito-pt-2-40per-4boxes {
+    display: flex;
+
+}
+
+.ladoDireito-pt-2-40per .box1 .box3{
+    margin-bottom: 5px;
+}
+
+.ladoDireito-pt-2-40per .box2, .box4 {
+    margin-top: 5px;
+}
+
+.ladoDireito-pt-2-40per .box-1-2 {
+    margin-right: 5px;
+}
+
+.ladoDireito-pt-2-40per .box-3-4 {
+    margin-left: 5px;
+}
+
+.ladoDireito-pt-2-40per .box1,
+.box2, .box3, .box4 {
+    width: 350px;
+    height: 66px;
+    
+    padding: 12px 16px;
+    border: 2px solid ;
+    border-radius: 0.75rem;
+    
+    text-align: left;
+    border-color: rgba(224, 221, 221, 0.863);
+}
+
+.ladoDireito-pt-2-40per-4boxes p {
+    opacity: 0.6;
+    height: 21px;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ladoDireito-pt-2-40per .box1:hover,
+.box2:hover, .box3:hover, .box4:hover {
+    background-color: rgba(231, 228, 228, 0.7);
+    cursor: pointer;
+}
+
+.ladoDireito-pt-2-40per .box5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 14px 48px 14px 16px;
+    margin-top: 20px;
+
+
+    border: 2px solid ;
+    border-radius: 0.75rem;
+    border-color: rgba(224, 221, 221, 0.863);
+    cursor: pointer;
+}
+
+.ladoDireito-pt-2-40per .box5 input {
+    border: none;
+    outline: none;
+}
+
+.ladoDireito-pt-2-40per .box5 img {
+    display: flex;
+    position: absolute;
+    
+    right: 20px;
+    bottom: 13px;
+    height: 20px;
+    width: 20px;
+    
+    background-color: rgba(224, 221, 221, 0.863);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.ladoDireito footer {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: sans-serif
+}
